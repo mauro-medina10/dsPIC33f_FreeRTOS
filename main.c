@@ -9,7 +9,7 @@
 #include "xc.h"
 #include <config.h>
 #include <stdint.h>
-
+#include <pwm.h>
 
 //FreeRTOS includes
 #include <FreeRTOS.h>
@@ -58,15 +58,20 @@ int main(void) {
 
     //Apago el LED
     PORTAbits.RA4 = 0;
+    
+    //Output compare
+    pwm_init();
 
-    if (xTaskCreate(led_test_task, "led_test_task", configMINIMAL_STACK_SIZE * 2, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS) {
-        while (1);
-    }
+//    if (xTaskCreate(led_test_task, "led_test_task", configMINIMAL_STACK_SIZE * 2, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS) {
+//        while (1);
+//    }
     
 	/* Start the high frequency interrupt test. */
 	vSetupTimerTest( mainTEST_INTERRUPT_FREQUENCY );
     
-    vTaskStartScheduler();
+    //vTaskStartScheduler();
+    
+    led_test_task(NULL);
     
     while(1);
 
@@ -78,17 +83,27 @@ static void led_test_task(void *pvParameters) {
     uint8_t flag = 0;
 
     while (1) {
-        while (count < 6666666) {
+        while (count < 16666666) {
             count++;
         }
         count = 0;
         if (flag) {
             PORTAbits.RA4 = 0;
             //PORTBbits.RB6 = 0;
+
+            //Apaga pwm
+            OC1CONbits.OCM = 0;
+            //OC1R = 0x300;
+
             flag = 0;
         } else {
             PORTAbits.RA4 = 1;
             // PORTBbits.RB6 = 1;
+
+            //Configura pwm a 43kHz
+            OC1CONbits.OCM = 3;
+            //OC1R = 0x17C;
+
             flag = 1;
         }
     }

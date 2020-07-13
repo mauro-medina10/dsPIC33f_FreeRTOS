@@ -1,6 +1,7 @@
 build/default/debug/main.o:  \
 main.c  \
  C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/config.h  \
+ C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/pwm.h  \
  C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/include/FreeRTOS.h  \
  C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/FreeRTOSConfig.h  \
  C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/include/projdefs.h  \

@@ -4,11 +4,11 @@ Tool Name:
   c:\program files\microchip\xc16\v1.50\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000039e0.00 \
-  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000039e0.01 \
-  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000039e0.02 \
-  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000039e0.03 \
-  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000039e0.04 \
+  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000021ac.00 \
+  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000021ac.01 \
+  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000021ac.02 \
+  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000021ac.03 \
+  -TC:\\Users\\mwa692\\AppData\\Local\\Temp\\tmp000021ac.04 \
   -p33FJ128GP802 \
   --mdfp=C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/dsPIC33F-GP-MC_DFP/1.2.35/xc16 \
   -o \
@@ -34,6 +34,7 @@ Command:
   build/default/debug/_ext/1627795287/port.o \
   build/default/debug/main.o \
   build/default/debug/_ext/2049206612/timertest.o \
+  build/default/debug/_ext/2049206612/pwm.o \
   --defsym=__MPLAB_BUILD=1 \
   --defsym=__MPLAB_DEBUG=1 \
   --defsym=__DEBUG=1 \
@@ -106,12 +107,12 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200               0x15a           0x207  (519)
-.const                       0x35a                0x36            0x51  (81)
-.text                        0x390              0x1d0c          0x2b92  (11154)
-.dinit                      0x209c                0x28            0x3c  (60)
+.text                        0x200               0x156           0x201  (513)
+.const                       0x356                0x28            0x3c  (60)
+.text                        0x37e              0x1d46          0x2be9  (11241)
+.dinit                      0x20c4                0x28            0x3c  (60)
 
-                 Total "program" memory used (bytes):         0x2e26  (11814) 8%
+                 Total "program" memory used (bytes):         0x2e62  (11874) 9%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x4000]
@@ -196,191 +197,191 @@ External Symbols in Program Memory (by address):
                   0x00023c                  __psv_init
                   0x000252                  __data_init_standard
                   0x000252                  __data_init
-                  0x0002d0                  __T1Interrupt
-                  0x000300                  __T2Interrupt
-                  0x000326                  __DefaultInterrupt
-                  0x00032c                  ___udivsi3
-                  0x00034c                  _memcpy
-                  0x000390                  _xTaskCreate
-                  0x0003fa                  _prvInitialiseNewTask
-                  0x0004be                  _prvAddNewTaskToReadyList
-                  0x00053a                  _vTaskDelayUntil
-                  0x0005b6                  _vTaskDelay
-                  0x0005e0                  _vTaskPrioritySet
-                  0x0006a8                  _vTaskSuspend
-                  0x00071a                  _prvTaskIsTaskSuspended
-                  0x00074c                  _vTaskResume
-                  0x0007aa                  _xTaskResumeFromISR
-                  0x000814                  _vTaskStartScheduler
-                  0x00084a                  _vTaskEndScheduler
-                  0x000862                  _vTaskSuspendAll
-                  0x00086e                  _xTaskResumeAll
-                  0x000918                  _xTaskGetTickCount
-                  0x000928                  _xTaskGetTickCountFromISR
-                  0x000938                  _uxTaskGetNumberOfTasks
-                  0x000940                  _pcTaskGetName
-                  0x00095a                  _xTaskCatchUpTicks
-                  0x000976                  _xTaskIncrementTick
-                  0x000a54                  _vTaskSwitchContext
-                  0x000ab8                  _vTaskPlaceOnEventList
-                  0x000ad2                  _vTaskPlaceOnUnorderedEventList
-                  0x000af6                  _xTaskRemoveFromEventList
-                  0x000b64                  _vTaskRemoveFromUnorderedEventList
-                  0x000bb8                  _vTaskSetTimeOutState
-                  0x000bd0                  _vTaskInternalSetTimeOutState
-                  0x000be4                  _xTaskCheckForTimeOut
-                  0x000c54                  _vTaskMissedYield
-                  0x000c5e                  _prvIdleTask
-                  0x000c74                  _prvInitialiseTaskLists
-                  0x000cac                  _prvCheckTasksWaitingTermination
-                  0x000cb2                  _prvResetNextTaskUnblockTime
-                  0x000cd4                  _uxTaskResetEventItemValue
-                  0x000cec                  _ulTaskNotifyTake
-                  0x000d58                  _xTaskNotifyWait
-                  0x000e14                  _xTaskGenericNotify
-                  0x000efc                  _xTaskGenericNotifyFromISR
-                  0x001002                  _vTaskNotifyGiveFromISR
-                  0x00108a                  _xTaskNotifyStateClear
-                  0x0010be                  _ulTaskNotifyValueClear
-                  0x001118                  _prvAddCurrentTaskToDelayedList
-                  0x001174                  _xQueueGenericReset
-                  0x0011fc                  _xQueueGenericCreate
-                  0x00126e                  _xQueueGenericSend
-                  0x00134c                  _xQueueGenericSendFromISR
-                  0x0013c4                  _xQueueGiveFromISR
-                  0x001430                  _xQueueReceive
-                  0x001508                  _xQueueSemaphoreTake
-                  0x0015d8                  _xQueuePeek
-                  0x0016b4                  _xQueueReceiveFromISR
-                  0x001724                  _xQueuePeekFromISR
-                  0x00175c                  _uxQueueMessagesWaiting
-                  0x001770                  _uxQueueSpacesAvailable
-                  0x00178e                  _uxQueueMessagesWaitingFromISR
-                  0x0017a2                  _vQueueDelete
-                  0x00192c                  _xQueueIsQueueEmptyFromISR
-                  0x001970                  _xQueueIsQueueFullFromISR
-                  0x001994                  _pvPortMalloc
-                  0x001a7e                  _vPortFree
-                  0x001ad4                  _xPortGetFreeHeapSize
-                  0x001adc                  _xPortGetMinimumEverFreeHeapSize
-                  0x001ae4                  _vPortInitialiseBlocks
-                  0x001bf0                  _vPortGetHeapStats
-                  0x001c72                  _pxPortInitialiseStack
-                  0x001d02                  _xPortStartScheduler
-                  0x001d46                  _vPortEndScheduler
-                  0x001d74                  _vPortEnterCritical
-                  0x001d8e                  _vPortExitCritical
-                  0x001daa                  _vListInitialise
-                  0x001ddc                  _vListInitialiseItem
-                  0x001dea                  _vListInsertEnd
-                  0x001e26                  _vListInsert
-                  0x001e8a                  _uxListRemove
-                  0x001ed2                  _main
-                  0x001f46                  build/default/debug/main.o:_led_test_task
-                  0x001f84                  _vApplicationIdleHook
-                  0x001f8a                  _timerForRTS_init
-                  0x001fb2                  _timerForRTS_get
-                  0x001fbc                  _vSetupTimerTest
-                  0x002020                  _vPortYield
+                  0x0002cc                  __T1Interrupt
+                  0x0002fc                  __T2Interrupt
+                  0x000322                  __DefaultInterrupt
+                  0x000328                  ___udivsi3
+                  0x000348                  _memcpy
+                  0x00037e                  _xTaskCreate
+                  0x0003e8                  _prvInitialiseNewTask
+                  0x0004ac                  _prvAddNewTaskToReadyList
+                  0x000528                  _vTaskDelayUntil
+                  0x0005a4                  _vTaskDelay
+                  0x0005ce                  _vTaskPrioritySet
+                  0x000696                  _vTaskSuspend
+                  0x000708                  _prvTaskIsTaskSuspended
+                  0x00073a                  _vTaskResume
+                  0x000798                  _xTaskResumeFromISR
+                  0x000802                  _vTaskStartScheduler
+                  0x000838                  _vTaskEndScheduler
+                  0x000850                  _vTaskSuspendAll
+                  0x00085c                  _xTaskResumeAll
+                  0x000906                  _xTaskGetTickCount
+                  0x000916                  _xTaskGetTickCountFromISR
+                  0x000926                  _uxTaskGetNumberOfTasks
+                  0x00092e                  _pcTaskGetName
+                  0x000948                  _xTaskCatchUpTicks
+                  0x000964                  _xTaskIncrementTick
+                  0x000a42                  _vTaskSwitchContext
+                  0x000aa6                  _vTaskPlaceOnEventList
+                  0x000ac0                  _vTaskPlaceOnUnorderedEventList
+                  0x000ae4                  _xTaskRemoveFromEventList
+                  0x000b52                  _vTaskRemoveFromUnorderedEventList
+                  0x000ba6                  _vTaskSetTimeOutState
+                  0x000bbe                  _vTaskInternalSetTimeOutState
+                  0x000bd2                  _xTaskCheckForTimeOut
+                  0x000c42                  _vTaskMissedYield
+                  0x000c4c                  _prvIdleTask
+                  0x000c62                  _prvInitialiseTaskLists
+                  0x000c9a                  _prvCheckTasksWaitingTermination
+                  0x000ca0                  _prvResetNextTaskUnblockTime
+                  0x000cc2                  _uxTaskResetEventItemValue
+                  0x000cda                  _ulTaskNotifyTake
+                  0x000d46                  _xTaskNotifyWait
+                  0x000e02                  _xTaskGenericNotify
+                  0x000eea                  _xTaskGenericNotifyFromISR
+                  0x000ff0                  _vTaskNotifyGiveFromISR
+                  0x001078                  _xTaskNotifyStateClear
+                  0x0010ac                  _ulTaskNotifyValueClear
+                  0x001106                  _prvAddCurrentTaskToDelayedList
+                  0x001162                  _xQueueGenericReset
+                  0x0011ea                  _xQueueGenericCreate
+                  0x00125c                  _xQueueGenericSend
+                  0x00133a                  _xQueueGenericSendFromISR
+                  0x0013b2                  _xQueueGiveFromISR
+                  0x00141e                  _xQueueReceive
+                  0x0014f6                  _xQueueSemaphoreTake
+                  0x0015c6                  _xQueuePeek
+                  0x0016a2                  _xQueueReceiveFromISR
+                  0x001712                  _xQueuePeekFromISR
+                  0x00174a                  _uxQueueMessagesWaiting
+                  0x00175e                  _uxQueueSpacesAvailable
+                  0x00177c                  _uxQueueMessagesWaitingFromISR
+                  0x001790                  _vQueueDelete
+                  0x00191a                  _xQueueIsQueueEmptyFromISR
+                  0x00195e                  _xQueueIsQueueFullFromISR
+                  0x001982                  _pvPortMalloc
+                  0x001a6c                  _vPortFree
+                  0x001ac2                  _xPortGetFreeHeapSize
+                  0x001aca                  _xPortGetMinimumEverFreeHeapSize
+                  0x001ad2                  _vPortInitialiseBlocks
+                  0x001bde                  _vPortGetHeapStats
+                  0x001c60                  _pxPortInitialiseStack
+                  0x001cf0                  _xPortStartScheduler
+                  0x001d34                  _vPortEndScheduler
+                  0x001d62                  _vPortEnterCritical
+                  0x001d7c                  _vPortExitCritical
+                  0x001d98                  _vListInitialise
+                  0x001dca                  _vListInitialiseItem
+                  0x001dd8                  _vListInsertEnd
+                  0x001e14                  _vListInsert
+                  0x001e78                  _uxListRemove
+                  0x001ec0                  _main
+                  0x001f74                  _vApplicationIdleHook
+                  0x001f7a                  _timerForRTS_init
+                  0x001fa2                  _timerForRTS_get
+                  0x001fac                  _vSetupTimerTest
+                  0x002010                  _vPortYield
+                  0x00208c                  _pwm_init
                   0xf80000                  __FBS.sec
                   0xf80002                  __FSS.sec
                   0xf80004                  __FGS.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x000326                  __DefaultInterrupt
+                  0x000322                  __DefaultInterrupt
                   0xf80000                  __FBS.sec
                   0xf80004                  __FGS.sec
                   0xf80002                  __FSS.sec
-                  0x0002d0                  __T1Interrupt
-                  0x000300                  __T2Interrupt
-                  0x00032c                  ___udivsi3
+                  0x0002cc                  __T1Interrupt
+                  0x0002fc                  __T2Interrupt
+                  0x000328                  ___udivsi3
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x001ed2                  _main
-                  0x00034c                  _memcpy
-                  0x000940                  _pcTaskGetName
-                  0x001118                  _prvAddCurrentTaskToDelayedList
-                  0x0004be                  _prvAddNewTaskToReadyList
-                  0x000cac                  _prvCheckTasksWaitingTermination
-                  0x000c5e                  _prvIdleTask
-                  0x0003fa                  _prvInitialiseNewTask
-                  0x000c74                  _prvInitialiseTaskLists
-                  0x000cb2                  _prvResetNextTaskUnblockTime
-                  0x00071a                  _prvTaskIsTaskSuspended
-                  0x001994                  _pvPortMalloc
-                  0x001c72                  _pxPortInitialiseStack
-                  0x001fb2                  _timerForRTS_get
-                  0x001f8a                  _timerForRTS_init
-                  0x000cec                  _ulTaskNotifyTake
-                  0x0010be                  _ulTaskNotifyValueClear
-                  0x001e8a                  _uxListRemove
-                  0x00175c                  _uxQueueMessagesWaiting
-                  0x00178e                  _uxQueueMessagesWaitingFromISR
-                  0x001770                  _uxQueueSpacesAvailable
-                  0x000938                  _uxTaskGetNumberOfTasks
-                  0x000cd4                  _uxTaskResetEventItemValue
-                  0x001f84                  _vApplicationIdleHook
-                  0x001daa                  _vListInitialise
-                  0x001ddc                  _vListInitialiseItem
-                  0x001e26                  _vListInsert
-                  0x001dea                  _vListInsertEnd
-                  0x001d46                  _vPortEndScheduler
-                  0x001d74                  _vPortEnterCritical
-                  0x001d8e                  _vPortExitCritical
-                  0x001a7e                  _vPortFree
-                  0x001bf0                  _vPortGetHeapStats
-                  0x001ae4                  _vPortInitialiseBlocks
-                  0x002020                  _vPortYield
-                  0x0017a2                  _vQueueDelete
-                  0x001fbc                  _vSetupTimerTest
-                  0x0005b6                  _vTaskDelay
-                  0x00053a                  _vTaskDelayUntil
-                  0x00084a                  _vTaskEndScheduler
-                  0x000bd0                  _vTaskInternalSetTimeOutState
-                  0x000c54                  _vTaskMissedYield
-                  0x001002                  _vTaskNotifyGiveFromISR
-                  0x000ab8                  _vTaskPlaceOnEventList
-                  0x000ad2                  _vTaskPlaceOnUnorderedEventList
-                  0x0005e0                  _vTaskPrioritySet
-                  0x000b64                  _vTaskRemoveFromUnorderedEventList
-                  0x00074c                  _vTaskResume
-                  0x000bb8                  _vTaskSetTimeOutState
-                  0x000814                  _vTaskStartScheduler
-                  0x0006a8                  _vTaskSuspend
-                  0x000862                  _vTaskSuspendAll
-                  0x000a54                  _vTaskSwitchContext
-                  0x001ad4                  _xPortGetFreeHeapSize
-                  0x001adc                  _xPortGetMinimumEverFreeHeapSize
-                  0x001d02                  _xPortStartScheduler
-                  0x0011fc                  _xQueueGenericCreate
-                  0x001174                  _xQueueGenericReset
-                  0x00126e                  _xQueueGenericSend
-                  0x00134c                  _xQueueGenericSendFromISR
-                  0x0013c4                  _xQueueGiveFromISR
-                  0x00192c                  _xQueueIsQueueEmptyFromISR
-                  0x001970                  _xQueueIsQueueFullFromISR
-                  0x0015d8                  _xQueuePeek
-                  0x001724                  _xQueuePeekFromISR
-                  0x001430                  _xQueueReceive
-                  0x0016b4                  _xQueueReceiveFromISR
-                  0x001508                  _xQueueSemaphoreTake
-                  0x00095a                  _xTaskCatchUpTicks
-                  0x000be4                  _xTaskCheckForTimeOut
-                  0x000390                  _xTaskCreate
-                  0x000e14                  _xTaskGenericNotify
-                  0x000efc                  _xTaskGenericNotifyFromISR
-                  0x000918                  _xTaskGetTickCount
-                  0x000928                  _xTaskGetTickCountFromISR
-                  0x000976                  _xTaskIncrementTick
-                  0x00108a                  _xTaskNotifyStateClear
-                  0x000d58                  _xTaskNotifyWait
-                  0x000af6                  _xTaskRemoveFromEventList
-                  0x00086e                  _xTaskResumeAll
-                  0x0007aa                  _xTaskResumeFromISR
-                  0x001f46                  build/default/debug/main.o:_led_test_task
+                  0x001ec0                  _main
+                  0x000348                  _memcpy
+                  0x00092e                  _pcTaskGetName
+                  0x001106                  _prvAddCurrentTaskToDelayedList
+                  0x0004ac                  _prvAddNewTaskToReadyList
+                  0x000c9a                  _prvCheckTasksWaitingTermination
+                  0x000c4c                  _prvIdleTask
+                  0x0003e8                  _prvInitialiseNewTask
+                  0x000c62                  _prvInitialiseTaskLists
+                  0x000ca0                  _prvResetNextTaskUnblockTime
+                  0x000708                  _prvTaskIsTaskSuspended
+                  0x001982                  _pvPortMalloc
+                  0x00208c                  _pwm_init
+                  0x001c60                  _pxPortInitialiseStack
+                  0x001fa2                  _timerForRTS_get
+                  0x001f7a                  _timerForRTS_init
+                  0x000cda                  _ulTaskNotifyTake
+                  0x0010ac                  _ulTaskNotifyValueClear
+                  0x001e78                  _uxListRemove
+                  0x00174a                  _uxQueueMessagesWaiting
+                  0x00177c                  _uxQueueMessagesWaitingFromISR
+                  0x00175e                  _uxQueueSpacesAvailable
+                  0x000926                  _uxTaskGetNumberOfTasks
+                  0x000cc2                  _uxTaskResetEventItemValue
+                  0x001f74                  _vApplicationIdleHook
+                  0x001d98                  _vListInitialise
+                  0x001dca                  _vListInitialiseItem
+                  0x001e14                  _vListInsert
+                  0x001dd8                  _vListInsertEnd
+                  0x001d34                  _vPortEndScheduler
+                  0x001d62                  _vPortEnterCritical
+                  0x001d7c                  _vPortExitCritical
+                  0x001a6c                  _vPortFree
+                  0x001bde                  _vPortGetHeapStats
+                  0x001ad2                  _vPortInitialiseBlocks
+                  0x002010                  _vPortYield
+                  0x001790                  _vQueueDelete
+                  0x001fac                  _vSetupTimerTest
+                  0x0005a4                  _vTaskDelay
+                  0x000528                  _vTaskDelayUntil
+                  0x000838                  _vTaskEndScheduler
+                  0x000bbe                  _vTaskInternalSetTimeOutState
+                  0x000c42                  _vTaskMissedYield
+                  0x000ff0                  _vTaskNotifyGiveFromISR
+                  0x000aa6                  _vTaskPlaceOnEventList
+                  0x000ac0                  _vTaskPlaceOnUnorderedEventList
+                  0x0005ce                  _vTaskPrioritySet
+                  0x000b52                  _vTaskRemoveFromUnorderedEventList
+                  0x00073a                  _vTaskResume
+                  0x000ba6                  _vTaskSetTimeOutState
+                  0x000802                  _vTaskStartScheduler
+                  0x000696                  _vTaskSuspend
+                  0x000850                  _vTaskSuspendAll
+                  0x000a42                  _vTaskSwitchContext
+                  0x001ac2                  _xPortGetFreeHeapSize
+                  0x001aca                  _xPortGetMinimumEverFreeHeapSize
+                  0x001cf0                  _xPortStartScheduler
+                  0x0011ea                  _xQueueGenericCreate
+                  0x001162                  _xQueueGenericReset
+                  0x00125c                  _xQueueGenericSend
+                  0x00133a                  _xQueueGenericSendFromISR
+                  0x0013b2                  _xQueueGiveFromISR
+                  0x00191a                  _xQueueIsQueueEmptyFromISR
+                  0x00195e                  _xQueueIsQueueFullFromISR
+                  0x0015c6                  _xQueuePeek
+                  0x001712                  _xQueuePeekFromISR
+                  0x00141e                  _xQueueReceive
+                  0x0016a2                  _xQueueReceiveFromISR
+                  0x0014f6                  _xQueueSemaphoreTake
+                  0x000948                  _xTaskCatchUpTicks
+                  0x000bd2                  _xTaskCheckForTimeOut
+                  0x00037e                  _xTaskCreate
+                  0x000e02                  _xTaskGenericNotify
+                  0x000eea                  _xTaskGenericNotifyFromISR
+                  0x000906                  _xTaskGetTickCount
+                  0x000916                  _xTaskGetTickCountFromISR
+                  0x000964                  _xTaskIncrementTick
+                  0x001078                  _xTaskNotifyStateClear
+                  0x000d46                  _xTaskNotifyWait
+                  0x000ae4                  _xTaskRemoveFromEventList
+                  0x00085c                  _xTaskResumeAll
+                  0x000798                  _xTaskResumeFromISR
 
 Memory Configuration
 
@@ -442,6 +443,7 @@ LOAD build/default/debug/_ext/963435064/heap_4.o
 LOAD build/default/debug/_ext/1627795287/port.o
 LOAD build/default/debug/main.o
 LOAD build/default/debug/_ext/2049206612/timertest.o
+LOAD build/default/debug/_ext/2049206612/pwm.o
                     0x0001                  __MPLAB_BUILD = 0x1
                     0x0001                  __MPLAB_DEBUG = 0x1
                     0x0001                  __DEBUG = 0x1
@@ -475,7 +477,7 @@ LOAD c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200        0x15a
+.text             0x000200        0x156
  *(.init)
  .init            0x000200         0x4c c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
@@ -486,43 +488,43 @@ LOAD c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libfx-elf.a
                   0x000252                  __data_init
  *(.user_init)
  *(.handle)
- .handle          0x0002c8          0x8 jump_table
+ .handle          0x0002c8          0x4 jump_table
  *(.isr*)
- .isr.text        0x0002d0         0x30 build/default/debug/_ext/1627795287/port.o
-                  0x0002d0                  __T1Interrupt
- .isr.text        0x000300         0x26 build/default/debug/_ext/2049206612/timertest.o
-                  0x000300                  __T2Interrupt
- .isr             0x000326          0x4 default_isr
-                  0x000326                  __DefaultInterrupt
+ .isr.text        0x0002cc         0x30 build/default/debug/_ext/1627795287/port.o
+                  0x0002cc                  __T1Interrupt
+ .isr.text        0x0002fc         0x26 build/default/debug/_ext/2049206612/timertest.o
+                  0x0002fc                  __T2Interrupt
+ .isr             0x000322          0x4 default_isr
+                  0x000322                  __DefaultInterrupt
  *(.libc)
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x00032a          0x2 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(crt_start_mode_normal.eo)
-                  0x00032a                  __crt_start_mode
-                  0x00032a                  __crt_start_mode_normal
- .libm.udivsi3    0x00032c         0x20 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
-                  0x00032c                  ___udivsi3
- .libc.memcpy     0x00034c          0xe c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libc-elf.a(memcpy.eo)
-                  0x00034c                  _memcpy
+                  0x000326          0x2 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(crt_start_mode_normal.eo)
+                  0x000326                  __crt_start_mode
+                  0x000326                  __crt_start_mode_normal
+ .libm.udivsi3    0x000328         0x20 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x000328                  ___udivsi3
+ .libc.memcpy     0x000348          0xe c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libc-elf.a(memcpy.eo)
+                  0x000348                  _memcpy
 
 usercode
  *(usercode)
 
 __FBS             0xf80000          0x2
  *(__FBS.sec*)
- __FBS.sec        0xf80000          0x2 /CW/_FBS
+ __FBS.sec        0xf80000          0x2 /CW/_FBS€®
                   0xf80000                  __FBS.sec
 
 __FSS             0xf80002          0x2
  *(__FSS.sec*)
- __FSS.sec        0xf80002          0x2 /CW/_FSSÀó
+ __FSS.sec        0xf80002          0x2 /CW/_FSSpž
                   0xf80002                  __FSS.sec
 
 __FGS             0xf80004          0x2
  *(__FGS.sec*)
- __FGS.sec        0xf80004          0x2 /CW/_FGS0Žò
+ __FGS.sec        0xf80004          0x2 /CW/_FGSÀí
                   0xf80004                  __FGS.sec
 
 __FOSCSEL
@@ -555,7 +557,7 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x5958
+.debug_info       0x000000       0x5fac
  *(.debug_info)
  .debug_info      0x000000         0xdd build/default/debug/_ext/2114784807/portasm_dsPIC.o
  .debug_info      0x0000dd        0x473 build/default/debug/_ext/1400307397/list.o
@@ -565,11 +567,12 @@ __FUID3
  .debug_info      0x00320a        0x16b build/default/debug/_ext/466854389/croutine.o
  .debug_info      0x003375        0x6d8 build/default/debug/_ext/963435064/heap_4.o
  .debug_info      0x003a4d        0xbff build/default/debug/_ext/1627795287/port.o
- .debug_info      0x00464c        0x8aa build/default/debug/main.o
- .debug_info      0x004ef6        0xa62 build/default/debug/_ext/2049206612/timertest.o
+ .debug_info      0x00464c        0x9a3 build/default/debug/main.o
+ .debug_info      0x004fef        0xa62 build/default/debug/_ext/2049206612/timertest.o
+ .debug_info      0x005a51        0x55b build/default/debug/_ext/2049206612/pwm.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0xa4e
+.debug_abbrev     0x000000        0xb29
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x14 build/default/debug/_ext/2114784807/portasm_dsPIC.o
  .debug_abbrev    0x000014         0xe1 build/default/debug/_ext/1400307397/list.o
@@ -579,10 +582,11 @@ __FUID3
  .debug_abbrev    0x0004b8         0x1d build/default/debug/_ext/466854389/croutine.o
  .debug_abbrev    0x0004d5        0x13c build/default/debug/_ext/963435064/heap_4.o
  .debug_abbrev    0x000611        0x1e1 build/default/debug/_ext/1627795287/port.o
- .debug_abbrev    0x0007f2        0x116 build/default/debug/main.o
- .debug_abbrev    0x000908        0x146 build/default/debug/_ext/2049206612/timertest.o
+ .debug_abbrev    0x0007f2        0x12e build/default/debug/main.o
+ .debug_abbrev    0x000920        0x146 build/default/debug/_ext/2049206612/timertest.o
+ .debug_abbrev    0x000a66         0xc3 build/default/debug/_ext/2049206612/pwm.o
 
-.debug_line       0x000000       0x1384
+.debug_line       0x000000       0x1475
  *(.debug_line)
  .debug_line      0x000000         0xb6 build/default/debug/_ext/2114784807/portasm_dsPIC.o
  .debug_line      0x0000b6        0x1b9 build/default/debug/_ext/1400307397/list.o
@@ -592,10 +596,11 @@ __FUID3
  .debug_line      0x000b6f         0x1a build/default/debug/_ext/466854389/croutine.o
  .debug_line      0x000b89        0x268 build/default/debug/_ext/963435064/heap_4.o
  .debug_line      0x000df1        0x242 build/default/debug/_ext/1627795287/port.o
- .debug_line      0x001033        0x1ac build/default/debug/main.o
- .debug_line      0x0011df        0x1a5 build/default/debug/_ext/2049206612/timertest.o
+ .debug_line      0x001033        0x12a build/default/debug/main.o
+ .debug_line      0x00115d        0x1a5 build/default/debug/_ext/2049206612/timertest.o
+ .debug_line      0x001302        0x173 build/default/debug/_ext/2049206612/pwm.o
 
-.debug_frame      0x000000        0xa4a
+.debug_frame      0x000000        0xa78
  *(.debug_frame)
  .debug_frame     0x000000         0x96 build/default/debug/_ext/1400307397/list.o
  .debug_frame     0x000096        0x250 build/default/debug/_ext/1400307397/queue.o
@@ -604,16 +609,18 @@ __FUID3
  .debug_frame     0x000830         0xf6 build/default/debug/_ext/1627795287/port.o
  .debug_frame     0x000926         0x62 build/default/debug/main.o
  .debug_frame     0x000988         0xc2 build/default/debug/_ext/2049206612/timertest.o
+ .debug_frame     0x000a4a         0x2e build/default/debug/_ext/2049206612/pwm.o
 
-.debug_str        0x000000        0x504
+.debug_str        0x000000        0x52e
  *(.debug_str)
  .debug_str       0x000000         0x2b build/default/debug/_ext/1400307397/list.o
  .debug_str       0x00002b        0x129 build/default/debug/_ext/1400307397/queue.o
  .debug_str       0x000154        0x2b4 build/default/debug/_ext/1400307397/tasks.o
  .debug_str       0x000408         0x57 build/default/debug/_ext/963435064/heap_4.o
  .debug_str       0x00045f         0x37 build/default/debug/_ext/1627795287/port.o
- .debug_str       0x000496         0x33 build/default/debug/main.o
- .debug_str       0x0004c9         0x3b build/default/debug/_ext/2049206612/timertest.o
+ .debug_str       0x000496         0x3e build/default/debug/main.o
+ .debug_str       0x0004d4         0x3b build/default/debug/_ext/2049206612/timertest.o
+ .debug_str       0x00050f         0x1f build/default/debug/_ext/2049206612/pwm.o
 
 .debug_loc
  *(.debug_loc)
@@ -622,7 +629,7 @@ __FUID3
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000        0x9db
+                  0x000000        0x9fa
  *(.debug_pubnames)
  .debug_pubnames
                   0x000000         0x72 build/default/debug/_ext/1400307397/list.o
@@ -638,11 +645,13 @@ __FUID3
                   0x000937         0x34 build/default/debug/main.o
  .debug_pubnames
                   0x00096b         0x70 build/default/debug/_ext/2049206612/timertest.o
+ .debug_pubnames
+                  0x0009db         0x1f build/default/debug/_ext/2049206612/pwm.o
 
 .debug_ranges
  *(.debug_ranges)
 
-.debug_aranges    0x000000         0xc0
+.debug_aranges    0x000000         0xd8
  *(.debug_aranges)
  .debug_aranges
                   0x000000         0x18 build/default/debug/_ext/2114784807/portasm_dsPIC.o
@@ -660,6 +669,8 @@ __FUID3
                   0x000090         0x18 build/default/debug/main.o
  .debug_aranges
                   0x0000a8         0x18 build/default/debug/_ext/2049206612/timertest.o
+ .debug_aranges
+                  0x0000c0         0x18 build/default/debug/_ext/2049206612/pwm.o
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -1631,62 +1642,66 @@ LOAD c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libc-elf.a
 END GROUP
 OUTPUT(dist/default/debug/proyectos.debug.elf elf32-pic30)
-LOAD /CW/_FGS0Žò
-LOAD /CW/_FSSÀó
-LOAD /CW/_FBS
+LOAD /CW/_FGSÀí
+LOAD /CW/_FSSpž
+LOAD /CW/_FBS€®
 LOAD jump_table
 LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x0000c0        0x719
+                  0x0000d8        0x799
  .debug_pubtypes
-                  0x0000c0         0x98 build/default/debug/_ext/1400307397/list.o
+                  0x0000d8         0x98 build/default/debug/_ext/1400307397/list.o
  .debug_pubtypes
-                  0x000158        0x17f build/default/debug/_ext/1400307397/queue.o
+                  0x000170        0x17f build/default/debug/_ext/1400307397/queue.o
  .debug_pubtypes
-                  0x0002d7        0x199 build/default/debug/_ext/1400307397/tasks.o
+                  0x0002ef        0x199 build/default/debug/_ext/1400307397/tasks.o
  .debug_pubtypes
-                  0x000470         0x12 build/default/debug/_ext/1400307397/timers.o
+                  0x000488         0x12 build/default/debug/_ext/1400307397/timers.o
  .debug_pubtypes
-                  0x000482         0x12 build/default/debug/_ext/466854389/croutine.o
+                  0x00049a         0x12 build/default/debug/_ext/466854389/croutine.o
  .debug_pubtypes
-                  0x000494         0x85 build/default/debug/_ext/963435064/heap_4.o
+                  0x0004ac         0x85 build/default/debug/_ext/963435064/heap_4.o
  .debug_pubtypes
-                  0x000519        0x118 build/default/debug/_ext/1627795287/port.o
+                  0x000531        0x118 build/default/debug/_ext/1627795287/port.o
  .debug_pubtypes
-                  0x000631         0xf4 build/default/debug/main.o
+                  0x000649         0xf6 build/default/debug/main.o
  .debug_pubtypes
-                  0x000725         0xb4 build/default/debug/_ext/2049206612/timertest.o
+                  0x00073f         0xb4 build/default/debug/_ext/2049206612/timertest.o
+ .debug_pubtypes
+                  0x0007f3         0x7e build/default/debug/_ext/2049206612/pwm.o
 
 __c30_signature
-                  0x0007d9         0x4e
+                  0x000871         0x54
  __c30_signature
-                  0x0007d9          0x6 build/default/debug/_ext/1400307397/list.o
+                  0x000871          0x6 build/default/debug/_ext/1400307397/list.o
  __c30_signature
-                  0x0007df          0x6 build/default/debug/_ext/1400307397/queue.o
+                  0x000877          0x6 build/default/debug/_ext/1400307397/queue.o
  __c30_signature
-                  0x0007e5          0x6 build/default/debug/_ext/1400307397/tasks.o
+                  0x00087d          0x6 build/default/debug/_ext/1400307397/tasks.o
  __c30_signature
-                  0x0007eb          0x6 build/default/debug/_ext/1400307397/timers.o
+                  0x000883          0x6 build/default/debug/_ext/1400307397/timers.o
  __c30_signature
-                  0x0007f1          0x6 build/default/debug/_ext/466854389/croutine.o
+                  0x000889          0x6 build/default/debug/_ext/466854389/croutine.o
  __c30_signature
-                  0x0007f7          0x6 build/default/debug/_ext/963435064/heap_4.o
+                  0x00088f          0x6 build/default/debug/_ext/963435064/heap_4.o
  __c30_signature
-                  0x0007fd          0x6 build/default/debug/_ext/1627795287/port.o
+                  0x000895          0x6 build/default/debug/_ext/1627795287/port.o
  __c30_signature
-                  0x000803          0x6 build/default/debug/main.o
+                  0x00089b          0x6 build/default/debug/main.o
  __c30_signature
-                  0x000809          0x6 build/default/debug/_ext/2049206612/timertest.o
+                  0x0008a1          0x6 build/default/debug/_ext/2049206612/timertest.o
  __c30_signature
-                  0x00080f          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+                  0x0008a7          0x6 build/default/debug/_ext/2049206612/pwm.o
  __c30_signature
-                  0x000815          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                  0x0008ad          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x00081b          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x0008b3          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x000821          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libc-elf.a(memcpy.eo)
+                  0x0008b9          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+ __c30_signature
+                  0x0008bf          0x6 c:/program files/microchip/xc16/v1.50/bin/bin/../../lib\libc-elf.a(memcpy.eo)
 
 .nbss               0x0850         0x32
  .nbss              0x0850         0x1c build/default/debug/_ext/1400307397/tasks.o
@@ -1749,103 +1764,103 @@ __c30_signature
  .ivt._T2Interrupt
                   0x000022          0x2 build/default/debug/_ext/2049206612/timertest.o
 
-.const              0x835a         0x36 load address 0x00035a  
- .const             0x835a         0x20 build/default/debug/_ext/1627795287/port.o
- .const             0x837a          0xe build/default/debug/main.o
- .const             0x8388          0x6 build/default/debug/_ext/1400307397/tasks.o
- .const             0x838e          0x2 build/default/debug/_ext/963435064/heap_4.o
+.const              0x8356         0x28 load address 0x000356  
+ .const             0x8356         0x20 build/default/debug/_ext/1627795287/port.o
+ .const             0x8376          0x6 build/default/debug/_ext/1400307397/tasks.o
+ .const             0x837c          0x2 build/default/debug/_ext/963435064/heap_4.o
 
-.text             0x000390       0x1d0c
- .text            0x000390        0xde4 build/default/debug/_ext/1400307397/tasks.o
-                  0x000390                  _xTaskCreate
-                  0x0003fa                  _prvInitialiseNewTask
-                  0x0004be                  _prvAddNewTaskToReadyList
-                  0x00053a                  _vTaskDelayUntil
-                  0x0005b6                  _vTaskDelay
-                  0x0005e0                  _vTaskPrioritySet
-                  0x0006a8                  _vTaskSuspend
-                  0x00071a                  _prvTaskIsTaskSuspended
-                  0x00074c                  _vTaskResume
-                  0x0007aa                  _xTaskResumeFromISR
-                  0x000814                  _vTaskStartScheduler
-                  0x00084a                  _vTaskEndScheduler
-                  0x000862                  _vTaskSuspendAll
-                  0x00086e                  _xTaskResumeAll
-                  0x000918                  _xTaskGetTickCount
-                  0x000928                  _xTaskGetTickCountFromISR
-                  0x000938                  _uxTaskGetNumberOfTasks
-                  0x000940                  _pcTaskGetName
-                  0x00095a                  _xTaskCatchUpTicks
-                  0x000976                  _xTaskIncrementTick
-                  0x000a54                  _vTaskSwitchContext
-                  0x000ab8                  _vTaskPlaceOnEventList
-                  0x000ad2                  _vTaskPlaceOnUnorderedEventList
-                  0x000af6                  _xTaskRemoveFromEventList
-                  0x000b64                  _vTaskRemoveFromUnorderedEventList
-                  0x000bb8                  _vTaskSetTimeOutState
-                  0x000bd0                  _vTaskInternalSetTimeOutState
-                  0x000be4                  _xTaskCheckForTimeOut
-                  0x000c54                  _vTaskMissedYield
-                  0x000c5e                  _prvIdleTask
-                  0x000c74                  _prvInitialiseTaskLists
-                  0x000cac                  _prvCheckTasksWaitingTermination
-                  0x000cb2                  _prvResetNextTaskUnblockTime
-                  0x000cd4                  _uxTaskResetEventItemValue
-                  0x000cec                  _ulTaskNotifyTake
-                  0x000d58                  _xTaskNotifyWait
-                  0x000e14                  _xTaskGenericNotify
-                  0x000efc                  _xTaskGenericNotifyFromISR
-                  0x001002                  _vTaskNotifyGiveFromISR
-                  0x00108a                  _xTaskNotifyStateClear
-                  0x0010be                  _ulTaskNotifyValueClear
-                  0x001118                  _prvAddCurrentTaskToDelayedList
- .text            0x001174        0x820 build/default/debug/_ext/1400307397/queue.o
-                  0x001174                  _xQueueGenericReset
-                  0x0011fc                  _xQueueGenericCreate
-                  0x00126e                  _xQueueGenericSend
-                  0x00134c                  _xQueueGenericSendFromISR
-                  0x0013c4                  _xQueueGiveFromISR
-                  0x001430                  _xQueueReceive
-                  0x001508                  _xQueueSemaphoreTake
-                  0x0015d8                  _xQueuePeek
-                  0x0016b4                  _xQueueReceiveFromISR
-                  0x001724                  _xQueuePeekFromISR
-                  0x00175c                  _uxQueueMessagesWaiting
-                  0x001770                  _uxQueueSpacesAvailable
-                  0x00178e                  _uxQueueMessagesWaitingFromISR
-                  0x0017a2                  _vQueueDelete
-                  0x00192c                  _xQueueIsQueueEmptyFromISR
-                  0x001970                  _xQueueIsQueueFullFromISR
- .text            0x001994        0x2de build/default/debug/_ext/963435064/heap_4.o
-                  0x001994                  _pvPortMalloc
-                  0x001a7e                  _vPortFree
-                  0x001ad4                  _xPortGetFreeHeapSize
-                  0x001adc                  _xPortGetMinimumEverFreeHeapSize
-                  0x001ae4                  _vPortInitialiseBlocks
-                  0x001bf0                  _vPortGetHeapStats
- .text            0x001c72        0x138 build/default/debug/_ext/1627795287/port.o
-                  0x001c72                  _pxPortInitialiseStack
-                  0x001d02                  _xPortStartScheduler
-                  0x001d46                  _vPortEndScheduler
-                  0x001d4c                  _vApplicationSetupTickTimerInterrupt
-                  0x001d74                  _vPortEnterCritical
-                  0x001d8e                  _vPortExitCritical
- .text            0x001daa        0x128 build/default/debug/_ext/1400307397/list.o
-                  0x001daa                  _vListInitialise
-                  0x001ddc                  _vListInitialiseItem
-                  0x001dea                  _vListInsertEnd
-                  0x001e26                  _vListInsert
-                  0x001e8a                  _uxListRemove
- .text            0x001ed2         0xb8 build/default/debug/main.o
-                  0x001ed2                  _main
-                  0x001f46                  build/default/debug/main.o:_led_test_task
-                  0x001f84                  _vApplicationIdleHook
- .text            0x001f8a         0x96 build/default/debug/_ext/2049206612/timertest.o
-                  0x001f8a                  _timerForRTS_init
-                  0x001fb2                  _timerForRTS_get
-                  0x001fbc                  _vSetupTimerTest
- .text            0x002020         0x7c build/default/debug/_ext/2114784807/portasm_dsPIC.o
-                  0x002020                  _vPortYield
+.text             0x00037e       0x1d46
+ .text            0x00037e        0xde4 build/default/debug/_ext/1400307397/tasks.o
+                  0x00037e                  _xTaskCreate
+                  0x0003e8                  _prvInitialiseNewTask
+                  0x0004ac                  _prvAddNewTaskToReadyList
+                  0x000528                  _vTaskDelayUntil
+                  0x0005a4                  _vTaskDelay
+                  0x0005ce                  _vTaskPrioritySet
+                  0x000696                  _vTaskSuspend
+                  0x000708                  _prvTaskIsTaskSuspended
+                  0x00073a                  _vTaskResume
+                  0x000798                  _xTaskResumeFromISR
+                  0x000802                  _vTaskStartScheduler
+                  0x000838                  _vTaskEndScheduler
+                  0x000850                  _vTaskSuspendAll
+                  0x00085c                  _xTaskResumeAll
+                  0x000906                  _xTaskGetTickCount
+                  0x000916                  _xTaskGetTickCountFromISR
+                  0x000926                  _uxTaskGetNumberOfTasks
+                  0x00092e                  _pcTaskGetName
+                  0x000948                  _xTaskCatchUpTicks
+                  0x000964                  _xTaskIncrementTick
+                  0x000a42                  _vTaskSwitchContext
+                  0x000aa6                  _vTaskPlaceOnEventList
+                  0x000ac0                  _vTaskPlaceOnUnorderedEventList
+                  0x000ae4                  _xTaskRemoveFromEventList
+                  0x000b52                  _vTaskRemoveFromUnorderedEventList
+                  0x000ba6                  _vTaskSetTimeOutState
+                  0x000bbe                  _vTaskInternalSetTimeOutState
+                  0x000bd2                  _xTaskCheckForTimeOut
+                  0x000c42                  _vTaskMissedYield
+                  0x000c4c                  _prvIdleTask
+                  0x000c62                  _prvInitialiseTaskLists
+                  0x000c9a                  _prvCheckTasksWaitingTermination
+                  0x000ca0                  _prvResetNextTaskUnblockTime
+                  0x000cc2                  _uxTaskResetEventItemValue
+                  0x000cda                  _ulTaskNotifyTake
+                  0x000d46                  _xTaskNotifyWait
+                  0x000e02                  _xTaskGenericNotify
+                  0x000eea                  _xTaskGenericNotifyFromISR
+                  0x000ff0                  _vTaskNotifyGiveFromISR
+                  0x001078                  _xTaskNotifyStateClear
+                  0x0010ac                  _ulTaskNotifyValueClear
+                  0x001106                  _prvAddCurrentTaskToDelayedList
+ .text            0x001162        0x820 build/default/debug/_ext/1400307397/queue.o
+                  0x001162                  _xQueueGenericReset
+                  0x0011ea                  _xQueueGenericCreate
+                  0x00125c                  _xQueueGenericSend
+                  0x00133a                  _xQueueGenericSendFromISR
+                  0x0013b2                  _xQueueGiveFromISR
+                  0x00141e                  _xQueueReceive
+                  0x0014f6                  _xQueueSemaphoreTake
+                  0x0015c6                  _xQueuePeek
+                  0x0016a2                  _xQueueReceiveFromISR
+                  0x001712                  _xQueuePeekFromISR
+                  0x00174a                  _uxQueueMessagesWaiting
+                  0x00175e                  _uxQueueSpacesAvailable
+                  0x00177c                  _uxQueueMessagesWaitingFromISR
+                  0x001790                  _vQueueDelete
+                  0x00191a                  _xQueueIsQueueEmptyFromISR
+                  0x00195e                  _xQueueIsQueueFullFromISR
+ .text            0x001982        0x2de build/default/debug/_ext/963435064/heap_4.o
+                  0x001982                  _pvPortMalloc
+                  0x001a6c                  _vPortFree
+                  0x001ac2                  _xPortGetFreeHeapSize
+                  0x001aca                  _xPortGetMinimumEverFreeHeapSize
+                  0x001ad2                  _vPortInitialiseBlocks
+                  0x001bde                  _vPortGetHeapStats
+ .text            0x001c60        0x138 build/default/debug/_ext/1627795287/port.o
+                  0x001c60                  _pxPortInitialiseStack
+                  0x001cf0                  _xPortStartScheduler
+                  0x001d34                  _vPortEndScheduler
+                  0x001d3a                  _vApplicationSetupTickTimerInterrupt
+                  0x001d62                  _vPortEnterCritical
+                  0x001d7c                  _vPortExitCritical
+ .text            0x001d98        0x128 build/default/debug/_ext/1400307397/list.o
+                  0x001d98                  _vListInitialise
+                  0x001dca                  _vListInitialiseItem
+                  0x001dd8                  _vListInsertEnd
+                  0x001e14                  _vListInsert
+                  0x001e78                  _uxListRemove
+ .text            0x001ec0         0xba build/default/debug/main.o
+                  0x001ec0                  _main
+                  0x001f74                  _vApplicationIdleHook
+ .text            0x001f7a         0x96 build/default/debug/_ext/2049206612/timertest.o
+                  0x001f7a                  _timerForRTS_init
+                  0x001fa2                  _timerForRTS_get
+                  0x001fac                  _vSetupTimerTest
+ .text            0x002010         0x7c build/default/debug/_ext/2114784807/portasm_dsPIC.o
+                  0x002010                  _vPortYield
+ .text            0x00208c         0x38 build/default/debug/_ext/2049206612/pwm.o
+                  0x00208c                  _pwm_init
 
-.dinit            0x00209c         0x28
- .dinit           0x00209c         0x28 data_init
+.dinit            0x0020c4         0x28
+ .dinit           0x0020c4         0x28 data_init
