@@ -4,20 +4,22 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/list.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/queue.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/semphr.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/task.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/timers.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/FreeRTOSConfig.h</itemPath>
-      <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portasm_dsPIC.S</itemPath>
+      <logicalFolder name="f1" displayName="FreeRTOS Headers" projectFiles="true">
+        <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/include/croutine.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/FreeRTOS.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/timers.h</itemPath>
+        <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/include/portable.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/semphr.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/list.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/task.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portasm_dsPIC.S</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/FreeRTOSConfig.h</itemPath>
+        <itemPath>../FreeRTOSv10.3.1/FreeRTOS/Source/include/queue.h</itemPath>
+        <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portmacro.h</itemPath>
+      </logicalFolder>
       <itemPath>config.h</itemPath>
-      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/include/portable.h</itemPath>
-      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/include/croutine.h</itemPath>
-      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portmacro.h</itemPath>
       <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/timertest.h</itemPath>
-      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/pwm.h</itemPath>
+      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/proyectos/pwm.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -42,7 +44,7 @@
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/timertest.c</itemPath>
-      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/FreeRTOSv10.3.1/FreeRTOS/Demo/dsPIC_MPLAB/pwm.c</itemPath>
+      <itemPath>C:/Users/mwa692/Desktop/fceia/anemometro/dspic/freertos/proyectos/pwm.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -121,7 +123,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="extra-include-directories"
-                  value="..\..\Source;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Source;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Source\include;..\Source\include;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Demo\dsPIC_MPLAB;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\proyectos;C:\Program Files\Microchip\xc16\v1.50\lib;..\..\..\..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.40\packs\Microchip\dsPIC33F-GS_DFP\1.2.36\xc16\support\dsPIC33F;..\..\port SPLIM\PIC24_dsPIC;C:\Program Files (x86)\Microchip\MPLABX\v5.40\packs\Microchip\dsPIC33F-GP-MC_DFP\1.2.35\xc16\support\templates\c;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Demo\dsPIC_MPLAB"/>
+                  value="..\..\Source;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Source;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Source\include;..\Source\include;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Demo\dsPIC_MPLAB;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\FreeRTOSv10.3.1\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\proyectos;C:\Program Files\Microchip\xc16\v1.50\lib;..\..\..\..\..\..\..\..\Program Files (x86)\Microchip\MPLABX\v5.40\packs\Microchip\dsPIC33F-GS_DFP\1.2.36\xc16\support\dsPIC33F;..\..\port SPLIM\PIC24_dsPIC;C:\Program Files (x86)\Microchip\MPLABX\v5.40\packs\Microchip\dsPIC33F-GP-MC_DFP\1.2.35\xc16\support\templates\c;C:\Users\mwa692\Desktop\fceia\anemometro\dspic\freertos\proyectos"/>
         <property key="isolate-each-function" value="false"/>
         <property key="keep-inline" value="false"/>
         <property key="oXC16gcc-align-arr" value="false"/>

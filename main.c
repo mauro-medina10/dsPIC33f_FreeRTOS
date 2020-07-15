@@ -27,6 +27,10 @@
 /* The frequency at which the "fast interrupt test" interrupt will occur. */
 #define mainTEST_INTERRUPT_FREQUENCY		( 20000 )
 
+
+/*Numero de pulsos enviados*/
+#define TRAIN_PULSE_LENGTH 10
+
 /*--------Tasks declaration---------*/
 static void led_test_task(void *pvParameters);
 
@@ -88,22 +92,21 @@ static void led_test_task(void *pvParameters) {
         }
         count = 0;
         if (flag) {
-            PORTAbits.RA4 = 0;
+            //Apaga led
+            //PORTAbits.RA4 = 0;
             //PORTBbits.RB6 = 0;
-
             //Apaga pwm
-            OC1CONbits.OCM = 0;
-            //OC1R = 0x300;
+            //pwm_stop();
 
             flag = 0;
         } else {
-            PORTAbits.RA4 = 1;
+            //Prende Led
+            //PORTAbits.RA4 = 1;
             // PORTBbits.RB6 = 1;
-
-            //Configura pwm a 43kHz
-            OC1CONbits.OCM = 3;
-            //OC1R = 0x17C;
-
+            //Arranca pwm
+            //pwm_start();
+            pwm_pulseTrain_bloq(TRAIN_PULSE_LENGTH);
+            
             flag = 1;
         }
     }
